@@ -1,0 +1,60 @@
+          <dl>
+            <dt>Beer Battered Fish and Chips</dt>
+            <dd class="price">13.95</dd>
+            <dd class="ingredients">Fresh local cod beer-battered, deep fried. Served with french fries and cole slaw.</dd>
+          </dl>
+          <dl>
+            <dt>Fried Scallop Plate</dt>
+            <dd class="price">13.95</dd>
+            <dd class="ingredients">Sea scallops deep fried. Served with french fries and cole slaw.</dd>
+          </dl>
+          <dl>
+            <dt>Fried Seafood Platter</dt>
+            <dd class="price">18.95</dd>
+            <dd class="ingredients">Cod, scallops and shrimp deep fried. Served with french fries and cole slaw.</dd>
+          </dl>
+          <dl>
+            <dt>Broiled Scrod</dt>
+            <dd class="price">13.95</dd>
+            <dd class="ingredients">Fresh local cod topped with sherry crumbs. Served with vegetable and choice of potato.</dd>
+          </dl>
+          <dl>
+            <dt>Broiled Scallops</dt>
+            <dd class="price">13.95</dd>
+            <dd class="ingredients">Sea scallops broiled to perfection served with vegetable and choice of potato.</dd>
+          </dl>
+          <dl>
+            <dt>Homemade Lasagna</dt>
+            <dd class="price">11.95</dd>
+            <dd class="ingredients">Homemade lasagna. served with garlic bread. </dd>
+          </dl>
+          <dl>
+            <dt>Penne, Linguine or Angel Hair Pasta</dt>
+            <dd class="price">8.95</dd>
+            <dd class="ingredients">served with garlic bread.</dd>
+          </dl>
+          <dl>
+            <dt>Eggplant Parmigiana</dt>
+            <dd class="price">9.95</dd>
+            <dd class="ingredients">Breaded, fried and baked with melted cheese. served over choice of pasta.</dd>
+          </dl>
+          <dl>
+            <dt>Sirloin Tips</dt>
+            <dd class="price">10.95</dd>
+            <dd class="ingredients">14 oz. of our marinated tender steak tips. served over rice.</dd>
+          </dl>
+          <dl>
+            <dt>BBQ pork chop &amp; steak tip combo</dt>
+            <dd class="price">11.95</dd>
+            <dd class="ingredients">served with vegetable and choice of potato.</dd>
+          </dl>
+          <dl>
+            <dt>Chicken Parmigiana</dt>
+            <dd class="price">10.95 </dd>
+            <dd class="ingredients">boneless chicken breast topped with marinara sauce &amp; parmesan cheese. served over choice of pasta.</dd>
+          </dl>
+          <dl>
+            <dt>Teriyaki Grill</dt>
+            <dd class="price">14.95</dd>
+            <dd class="ingredients">Steak tips &amp; chicken breast topped with a teriyaki glaze. servedwithrice and vegetable.</dd>
+          </dl>

@@ -1,0 +1,222 @@
+@charset "utf-8";
+body {
+	margin:0;
+	padding:0;
+	background:#444;
+	font-family: georgia, times, serif;
+}
+/* CSS Document */
+
+/* 
+Title:     All American Pub and Grill Stylesheet
+Author:    Chris Gillis - Saltline Studio Chatham, Ma
+*/
+	
+#container {
+	width: 750px;
+	\width: 770px;
+	w\idth: 750px;
+	background: #fcfae6 url(../images/bg_logo.gif) no-repeat;
+	margin: 0px auto;
+}
+#header {
+	margin-top: 0px;
+}
+
+#rightside {
+	text-align:left;
+	float:right;
+	padding: 5px 0 0 12px;
+	width: 296px;
+}
+#rightside a {
+	font-weight: normal;
+	color: #663333;
+	text-decoration: none;
+}
+#rightside img {
+	padding: 1px;
+	border: 8px solid #e7e9d1;
+	background: #fcfae6;
+}
+#rightside ul {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	height: 100%;
+}
+#leftside {
+	text-align:left;
+	float:left;
+	padding: 5px;
+	width: 410px;
+}
+#leftside a {
+	font-size: 100%;
+	font-family: georgia, times, serif;
+	color: #663333;
+}
+#leftside img {
+	padding: 1px;
+	border: 8px solid #e7e9d1;
+	background: #fcfae6;
+	margin-bottom: 8px;
+}
+#leftside ul {
+	padding: 10px 0 20px 0px;
+	list-style: none;
+	height: 100%;
+	border-bottom: 1px solid #741407;
+}
+#leftside li {
+	float: left;
+	font-family: georgia, times, serif;
+	display: inline;
+	margin: 0px 5px 5px 5px;
+	font-size: 100%;
+}
+#leftside li a {
+	line-height: 14px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	color: #741407;
+}
+#leftside li a.active, li a:hover {
+	color: #fff;
+	border-bottom: 4px solid #901808;
+	color: #901808;
+}
+#saying img {
+	border: 0;
+	padding: 3px 0 20px;
+}
+#content {
+	font-size: 15px;
+	line-height: 1.7em;
+	font-family: georgia, times, serif;
+	color: #333;
+	padding: 9px;
+}
+/* ----- navigation ----- */
+		
+#nav {
+	margin: -3px 0px 0px 0px;
+	padding: 0;
+	background:#901808;
+	width: 750px;
+	height: 45px;
+	border-top: 10px solid #741407;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 100%;
+	display:inline;
+}
+#nav li {
+	float: left;
+	font-family: georgia, times, serif;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+#nav li a {
+	float: left;
+	font-weight: normal;
+	padding: 12px 18px;
+	font-size: 90%;
+	color: #fcfae6;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+#nav li a:hover {
+	color: #fff;
+}
+#nav li a.active {
+	color: #fff;
+	background: #741407;
+	text-decoration: none;
+}
+/* ----- headers ----- */
+             
+h1 {
+	font-family: georgia, times, serif;
+	color: #741407;
+	font-weight: normal;
+	font-size: 170%;
+}
+h2 {
+	color: #741407;
+	font: normal 150% georgia, times, serif;
+}
+.cushycms h2 {
+	font-size: 130%;
+}
+
+/* ----- contact form ----- */
+	    
+#contactform {
+	float:left;
+	text-align:left;
+	background:#477725;
+	width: 500px;
+	padding: 20px;
+}
+/* ----- footer ----- */
+	
+#footer {
+	clear: both;
+	padding: 10px 0 10px 15px;
+	font-family: georgia, times, serif;
+	color: #663333;
+	font-size: 13px;
+}
+#footer a {
+	font-size: 100%;
+	font-family: georgia, times, serif;
+	color: #663333;
+	text-align:center;
+}
+/* ----- menu ----- */
+
+
+
+div#menu {
+	width:410px;
+	margin: 0 auto;
+	font-family: Georgia, times, sans-serif;
+	text-align:left;
+}
+dl {
+	width: 100%;
+	overflow: auto;
+	margin: 0 0 1em;
+}
+dt, dd.price {
+	font-size: 110%;
+	font-weight: normal;
+	color: #901808;
+}
+dt {
+	float: left;
+	padding-right: 3px;
+	color: #901808;
+}
+dd {
+	margin:0;
+}
+dd.price {
+	float: right;
+	padding-left: 3px;
+	color: #901808;
+}
+dd.ingredients {
+	float: left;
+	width: 80%;
+	padding: 3px 0;
+	font: italic 100% Georgia, Times, sans-serif;
+	color: #555;
+}
