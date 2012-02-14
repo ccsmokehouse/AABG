@@ -163,9 +163,6 @@ nav ul a:hover, nav ul a.active,nav ul a:focus { /* this changes the background 
 	border: 0;
 	padding: 3px 0 5px;
 }
-.clearfloat {
-	clear: both;
-}
 
 /* ----- footer ----- */
 	
