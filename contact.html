@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="All American Bar and Grill contact information and directions.">
+<meta name="keywords" content="bar, grill, resturant, appetizer, dinner, lunch, breakfast, american, mexican, italian, cocktails, keno, brunch, take out, menu, contact">
 <title>All American Bar and Grill - S Dennis, MA Cape Cod</title>
-<link href="css/desktop.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -11,56 +14,57 @@
 
 <body>
 <div class="container">
-  <nav>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="restaurant.html">RESTAURANT</a></li>
-      <li><a href="menus.html">MENUS</a></li>
-      <li><a href="drinks.html">DRINKS</a></li>
-      <li><a href="jobs.html">JOBS</a></li>
-      <li><a href="contact.html" class="active">CONTACT</a></li>
-    </ul>
-  </nav>
-  <header> <a href="index.html"><img src="images/header.jpg" width="750" height="164" alt="Logo" border=0></a> </header>
-  <div class="content">
-    <section class="left">
-      <h1> contact us </h1>
-      <form method="post" action="/cgi-bin/formmail.pl">
-        <label accesskey="9">Your Name: <em>*</em></label>
-        <br>
-        <input type="text" name="name" tabindex="1" />
-        <br>
-        <label>Your Email: <em>*</em></label>
-        <br>
-        <input type="text" name="email"  />
-        <br>
-        <label> Message:<em>*</em> </label>
-        <br>
-        <textarea name="comments" cols="50" rows="9"> </textarea>
-        <br>
-        <input type=submit value="submit" tabindex="3" />
-        <input type=hidden name="recipient" value="kim@allamericanbarandgrill.com"  />
-        <input type=hidden name="redirect" value="http://www.allamericanbarandgrill.com/contact/thankyou.htm"  />
-        <input type=hidden name="subject" value="Message from the Contact Form"  />
-      </form>
-    </section>
-    <section class="right">
-      <h2>location</h2>
-      <p>All American Bar and Grill<br>
-        50 Route 134<br>
-        South Dennis, MA 02660-3710 <br>
-        (PH): (508) 394-1119<br>
-        (FAX): (508) 760-1023 </p>
-      <h2>hours of operation</h2>
-      <p>Mon-Sat 11:30 am – 1:00 am<br>
-        Sun 12:00 pm – 1:00 am<br>
-        Late night food served at the bar<br>
-      </p>
-      <h2>map</h2>
-      <p><a href="http://maps.google.com/maps?q=All+American+Bar+and+Grill,+Dennis,+MA&hl=en&ll=41.667911,-70.147877&spn=0.024973,0.038238&sll=41.680348,-70.148048&sspn=0.205902,0.305901&vpsrc=6&hq=All+American+Bar+and+Grill,&hnear=Dennis,+Barnstable,+Massachusetts&t=m&z=15" target="_blank"><img src="images/map.gif" width="270" height="130" alt="all american bar and grill map"></a>Click the map above for directions to the All American.</p>
-    </section>
-    <!-- end .content --></div>
-  <footer>© All American Bar and Grill | Site Designed and Developed by Saltline Studio with Web Standards </footer>
-  <!-- end .container --></div>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="restaurant.html">RESTAURANT</a></li>
+			<li><a href="menus.html">MENUS</a></li>
+			<li><a href="drinks.html">DRINKS</a></li>
+			<li><a href="jobs.html">JOBS</a></li>
+			<li><a href="contact.html" class="active">CONTACT</a></li>
+		</ul>
+	</nav>
+	<header><a href="index.html"><img src="images/header.jpg" width="750" height="164" alt="Logo" border=0></a></header>
+	<div class="content">
+		<section class="left">
+			<h1>Contact Us</h1>
+			<form method="post" action="/cgi-bin/formmail.pl">
+				<label accesskey="9">Your Name: <em>*</em></label>
+				<br>
+				<input type="text" name="name" tabindex="1">
+				<br>
+				<label>Your Email: <em>*</em></label>
+				<br>
+				<input type="text" name="email" >
+				<br>
+				<label> Message:<em>*</em></label>
+				<br>
+				<textarea name="comments" cols="50" rows="9"></textarea>
+				<br>
+				<input type=submit value="submit" tabindex="3">
+				<input type=hidden name="recipient" value="kim@allamericanbarandgrill.com" >
+				<input type=hidden name="redirect" value="http://www.allamericanbarandgrill.com/contact/thankyou.htm" >
+				<input type=hidden name="subject" value="Message from the Contact Form" >
+			</form>
+		</section>
+		<section class="right">
+			<h2>Location</h2>
+			<p>All American Bar and Grill<br>
+				50 Route 134<br>
+				South Dennis, MA 02660-3710 <br>
+				(PH): (508) 394-1119<br>
+				(FAX): (508) 760-1023 </p>
+			<h2>Hours of Operation</h2>
+			<p>Mon-Sat 11:30 am – 1:00 am<br>
+				Sun 12:00 pm – 1:00 am<br>
+				Sunday brunch 10:00 am – 2:00 pm<br>
+				Late night food served at the bar<br>
+			</p>
+			<h2>Map</h2>
+			<p><a href="http://maps.google.com/maps?q=All+American+Bar+and+Grill,+Dennis,+MA&hl=en&ll=41.667911,-70.147877&spn=0.024973,0.038238&sll=41.680348,-70.148048&sspn=0.205902,0.305901&vpsrc=6&hq=All+American+Bar+and+Grill,&hnear=Dennis,+Barnstable,+Massachusetts&t=m&z=15" target="_blank"><img src="images/map.gif" width="270" height="130" alt="all american bar and grill map"></a>Click the map above for directions to the All American.</p>
+		</section>
+	</div><!-- end .content -->
+	<footer>&copy; All American Bar and Grill | <a href="mailto:info@allamericanbarandgrill.com">info@allamericanbarandgrill.com</a> | (508) 394-1119</footer>
+</div><!-- end .container -->
 </body>
 </html>

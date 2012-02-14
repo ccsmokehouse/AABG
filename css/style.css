@@ -1,194 +1,198 @@
 @charset "utf-8";
+html {
+	overflow-y: scroll;
+}
 body {
-	margin:0;
-	padding:0;
-	background:#444;
-	font-family: georgia, times, serif;
+	font: 100%/1.4 Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 0;
+	background: #444;
 }
-/* CSS Document */
-
-/* 
-Title:     All American Pub and Grill Stylesheet
-Author:    Chris Gillis - Saltline Studio Chatham, Ma
-*/
-	
-#container {
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0px;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
 	width: 750px;
-	\width: 770px;
-	w\idth: 750px;
-	background: #fcfae6 url(../images/bg_logo.gif) no-repeat;
 	margin: 0px auto;
+	background: #FCFAE6 url(../images/bg_logo.gif) no-repeat;
 }
-#header {
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header {
+	height: 164px;
 	margin-top: 0px;
 }
-
-#rightside {
-	text-align:left;
-	float:right;
-	padding: 5px 0 0 12px;
-	width: 296px;
+nav {
+	background: #901808;
+	width: 750px;
+	height: 45px;
+	border-top: 10px solid #741407;
 }
-#rightside a {
-	font-weight: normal;
-	color: #663333;
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+nav ul {
+	list-style: none;
+	margin-top: 10px;
+}
+nav ul li {
+	/* [disabled]display: inline; */
+	float: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 100%;
+	letter-spacing: 2px;
+}
+nav ul a { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	color: #fcfae6;
+	padding: 12px 18px;
 	text-decoration: none;
 }
-#rightside img {
-	padding: 1px;
-	border: 8px solid #e7e9d1;
-	background: #fcfae6;
+nav ul a:link, nav ul a:visited {
+	background: #901808;
 }
-#rightside ul {
-	list-style: none;
-	padding: 5px;
-	margin: 0;
-	height: 100%;
+nav ul a:hover, nav ul a.active,nav ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #741407;
+	color: #FCF9E6;
 }
-#leftside {
+.content {
+	color: #333;
+	padding: 9px;
+	font: 15px/1.7em Georgia, "Times New Roman", Times, serif;
+}
+/* ----- headers ----- */
+             
+.content h1{
+	color: #741407;
+	padding: 10px 0px;
+	margin-bottom: 0px;
+	font: normal 170% Georgia, "Times New Roman", Times, serif;
+}
+.content h2{
+	color: #741407;
+	font: normal 150% georgia, times, serif;
+	padding: 10px 0px;
+	margin-bottom: 0px;
+}
+.content h3 {
+	padding: 0px;
+}
+
+.content  p {
+	padding: 0px;
+	margin-top: 0px;
+}
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+.left {
 	text-align:left;
 	float:left;
 	padding: 5px;
 	width: 410px;
 }
-#leftside a {
+.left a {
 	font-size: 100%;
 	font-family: georgia, times, serif;
 	color: #663333;
 }
-#leftside img {
+.left img {
 	padding: 1px;
 	border: 8px solid #e7e9d1;
 	background: #fcfae6;
 	margin-bottom: 8px;
 }
-#leftside ul {
+.left ul {
+	border-bottom: 1px solid #741407;
+	height: 100%;
 	padding: 10px 0 20px 0px;
 	list-style: none;
-	height: 100%;
-	border-bottom: 1px solid #741407;
 }
-#leftside li {
+.left li {
 	float: left;
-	font-family: georgia, times, serif;
-	display: inline;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	margin: 0px 5px 5px 5px;
-	font-size: 100%;
+	font-size: 89%;
+	display: inline;
 }
-#leftside li a {
+
+.left li a {
 	line-height: 14px;
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
 	color: #741407;
 }
-#leftside li a.active, li a:hover {
+.left li a.active, li a:hover {
 	color: #fff;
 	border-bottom: 4px solid #901808;
 	color: #901808;
 }
-#saying img {
-	border: 0;
-	padding: 3px 0 20px;
+.right {
+	text-align:left;
+	float:right;
+	padding: 5px 0 0 12px;
+	width: 296px;
 }
-#content {
-	font-size: 15px;
-	line-height: 1.7em;
-	font-family: georgia, times, serif;
-	color: #333;
-	padding: 9px;
-}
-/* ----- navigation ----- */
-		
-#nav {
-	margin: -3px 0px 0px 0px;
-	padding: 0;
-	background:#901808;
-	width: 750px;
-	height: 45px;
-	border-top: 10px solid #741407;
-}
-#nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	height: 100%;
-	display:inline;
-}
-#nav li {
-	float: left;
-	font-family: georgia, times, serif;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-}
-#nav li a {
-	float: left;
+.right a {
 	font-weight: normal;
-	padding: 12px 18px;
-	font-size: 90%;
-	color: #fcfae6;
+	color: #663333;
 	text-decoration: none;
-	letter-spacing: 2px;
-}
-#nav li a:hover {
-	color: #fff;
-}
-#nav li a.active {
-	color: #fff;
-	background: #741407;
-	text-decoration: none;
-}
-/* ----- headers ----- */
-             
-h1 {
-	font-family: georgia, times, serif;
-	color: #741407;
-	font-weight: normal;
-	font-size: 170%;
-}
-h2 {
-	color: #741407;
-	font: normal 150% georgia, times, serif;
-}
-.cushycms h2 {
-	font-size: 130%;
 }
 
-/* ----- contact form ----- */
-	    
-#contactform {
-	float:left;
-	text-align:left;
-	background:#477725;
-	width: 500px;
-	padding: 20px;
+.right img {
+	padding: 1px;
+	border: 8px solid #e7e9d1;
+	background: #fcfae6;
 }
+.right ul {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	height: 100%;
+}
+.saying img {
+	border: 0;
+	padding: 3px 0 5px;
+}
+.clearfloat {
+	clear: both;
+}
+
 /* ----- footer ----- */
 	
-#footer {
+footer {
 	clear: both;
 	padding: 10px 0 10px 15px;
-	font-family: georgia, times, serif;
 	color: #663333;
-	font-size: 13px;
+	position: relative;
+	font: 13px Georgia, "Times New Roman", Times, serif;
 }
-#footer a {
-	font-size: 100%;
-	font-family: georgia, times, serif;
+footer a {
 	color: #663333;
 	text-align:center;
+	font: 100% Georgia, "Times New Roman", Times, serif;
 }
+
 /* ----- menu ----- */
 
-
-
-div#menu {
+.menu {
 	width:410px;
 	margin: 0 auto;
-	font-family: Georgia, times, sans-serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	text-align:left;
+}
+.cushycms {
+	padding-bottom: 10px;
+
 }
 dl {
 	width: 100%;
@@ -204,6 +208,7 @@ dt {
 	float: left;
 	padding-right: 3px;
 	color: #901808;
+	clear: both;
 }
 dd {
 	margin:0;
@@ -219,4 +224,9 @@ dd.ingredients {
 	padding: 3px 0;
 	font: italic 100% Georgia, Times, sans-serif;
 	color: #555;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
 }
