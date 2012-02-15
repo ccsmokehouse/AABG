@@ -168,15 +168,20 @@ nav ul a:hover, nav ul a.active,nav ul a:focus { /* this changes the background 
 	
 footer {
 	clear: both;
-	padding: 10px 0 10px 15px;
 	color: #663333;
-	position: relative;
-	font: 13px Georgia, "Times New Roman", Times, serif;
+	font-size: 0.8em;
+	margin: 0 0 1.0em 0;
+	padding: 0.625em;
 }
 footer a {
 	color: #663333;
 	text-align:center;
-	font: 100% Georgia, "Times New Roman", Times, serif;
+}
+.twitface {
+	float: right;
+}
+.twitface a {
+	display: inline-block;
 }
 
 /* ----- menu ----- */
