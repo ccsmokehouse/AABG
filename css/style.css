@@ -85,13 +85,13 @@ nav ul a:hover, nav ul a.active,nav ul a:focus { /* this changes the background 
 	padding: 0px;
 }
 
-.content  p {
+.content p {
 	padding: 0px;
 	margin-top: 0px;
 }
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
 .content ul, .content ol {
-	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+	padding: 0 15px 15px 40px; 
 }
 .left {
 	text-align:left;
