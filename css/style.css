@@ -227,6 +227,9 @@ dd.ingredients {
 	font: italic 100% Georgia, Times, sans-serif;
 	color: #555;
 }
+.cf {
+	clear: both;
+}
 
 /*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
 header, section, footer, aside, nav, article, figure {
